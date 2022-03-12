@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="fav-icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Home | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/feabfdde9c.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    
+    <header> <!-- Header inicial-->
+        <h1>Login</h1>
+    </header> <!-- Header fim-->
+
+    <main> <!-- Main inicial-->
+        <form>
+            <section class="inputs-container"> <!-- Comeco sessão-->
+                <input type="email" placeholder="exemple@exemple.com">
+
+                <div class="password-container">
+                <input type="password" id="field-password" class="field-passwor" placeholder="********">
+                <i class="fa-solid fa-eye" id="eye" onclick="showPass()"></i>
+                <i class="fa-solid fa-eye-slash" id="eye-slash" onclick="showPass()"></i>
+                </div>
+            </section> <!-- Fim primeira sessão-->
+
+            <section class="password-infos"> <!-- Comeco sessãa DOIS-->
+                <div>
+                    <input type="checkbox">
+                    <span>Lembrar senha?</span>
+                </div>
+
+                <a href="#">Esqueceu a senha?</a>
+            </section> <!-- Fim segunda sessão-->
+
+            <button id="btn-login">Logar</button>
+
+            <section class="links-container"> <!--Começo terceira sessão-->
+                <span>Existem outras opções de login:</span>
+
+                <aside>
+                    <a href="#"><i class="fa-brands fa-google google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-apple apple"></i></a>
+                </aside>
+            </section> <!-- Fim terceira sessão-->
+            
+            <footer>
+                <hr>
+                <span>Ainda não tem um cadastro? <a href="#">Cadastre-se clicando aqui</a></span>
+            </footer>
+        </form>
+    </main> <!-- Main final-->
 </body>
 </html>
